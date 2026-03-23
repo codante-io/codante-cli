@@ -1,0 +1,41 @@
+{
+  "name": "codante",
+  "version": "0.1.0",
+  "description": "CLI tool for Codante.io coding challenges",
+  "type": "module",
+  "bin": {
+    "codante": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "codante",
+    "cli",
+    "challenges",
+    "coding"
+  ],
+  "author": "Codante.io",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^22.0.1",
+    "citty": "^0.2.1",
+    "cli-table3": "^0.6.5",
+    "conf": "^15.1.0",
+    "execa": "^9.6.1",
+    "ofetch": "^1.5.1",
+    "open": "^11.0.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@vitest/coverage-istanbul": "^3.2.4",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
